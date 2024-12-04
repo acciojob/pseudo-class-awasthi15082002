@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+/* Container styles */
+#container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  position: relative;
+  font-size: 16px;
+}
+
+/* Pseudo-element before the content */
+#container::before {
+  content: "Before Content: ";
+  color: #f00;  /* Red color */
+  font-size: 20px; /* Font size of 20px */
+  position: absolute;
+  top: -30px; /* Position it above the container */
+  left: 20px; /* Align with the left side of the container */
+}
+
+/* Pseudo-element after the content */
+#container::after {
+  content: " :After Content";
+  color: #f00;  /* Red color */
+  font-size: 20px; /* Font size of 20px */
+  position: absolute;
+  bottom: -30px; /* Position it below the container */
+  left: 20px; /* Align with the left side of the container */
+}
